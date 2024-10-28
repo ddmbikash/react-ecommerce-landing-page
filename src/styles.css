@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* Hero Styles */
+.hero {
+  background: url('https://img.freepik.com/premium-photo/guitar-with-word-it-is-black-background_337384-104507.jpg?w=1060') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+    color: white;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero-button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Featured Products Styles */
+.products {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Categories Styles */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(65deg, #a795e6, #ff2fa28c);
+}
+
+.categories img{
+    max-width: 100%;
+    height: auto;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.category {
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials Styles */
+.testimonials {
+  padding: 40px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+/* Special Offers Styles */
+.special-offers {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffeb3b;
+  /*margin-bottom: 20px;*/
+  border-radius: 5px;
+}
+
+.special-offers-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-offers-grid img{
+    max-width: 100%;
+    height: auto;
+}
+
+.special-offers .offer {
+  padding: 20px;
+}
+
+/* Newsletter Styles */
+.newsletter {
+  padding: 40px 20px;
+  text-align: center;
+  background: #007bff;
+  color: white;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+
+
+
+/*----Testimonials---*/
+
+.testimonials {
+  padding: 40px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.testimonial-container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.testimonial {
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust position of dots */
+}
+
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.slider-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+.slider-button:first-of-type {
+  left: 0;
+}
+
+.slider-button:last-of-type {
+  right: 0;
+}
